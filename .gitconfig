@@ -1,0 +1,32 @@
+[user]
+  name = blah
+  email = blah
+[core]
+  editor = /usr/bin/vim
+  filemode = true
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  grep = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red
+  new = green
+[color "status"]
+  added = yellow
+  changed = cyan
+  untracked = green
+[alias]
+  co = checkout
+  cm = commit
+  st = status
+  m = merge
+  save = !git add -A && git commit -m 'SAVEPOINT'
+  wip = !git add -u && git commit -m "WIP"
+  undo = reset HEAD~1 --mixed
