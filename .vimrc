@@ -20,6 +20,7 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'godlygeek/tabular'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 
