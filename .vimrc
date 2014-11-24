@@ -9,6 +9,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
@@ -56,7 +57,8 @@ endif
 " Color & Theme
 set t_Co=256
 let g:solarized_termcolors=256
-colorscheme hybrid
+"colorscheme hybrid
+colorscheme jellybeans
 
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -65,7 +67,7 @@ let g:airline_section_y = 'BN: %{bufnr("%")}'
 let g:airline_detect_whitespace=0
 let mapleader = ","
 
-nmap <leader>ne :NERDTree<cr>
+nmap <leader>ne :NERDTreeTabsToggle<cr>
 
 " Use ctrl-[hjkl] to select the active split!
 nmap <silent> <c-k> :wincmd k<CR>
