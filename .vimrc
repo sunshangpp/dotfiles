@@ -67,7 +67,8 @@ let g:airline_section_y = 'BN: %{bufnr("%")}'
 let g:airline_detect_whitespace=0
 let mapleader = ","
 
-nmap <leader>ne :NERDTreeTabsToggle<cr>
+nmap <leader>ne :NERDTreeTabsToggle<CR>
+nmap <leader>nf :NERDTreeFind<CR>
 
 " Use ctrl-[hjkl] to select the active split!
 nmap <silent> <c-k> :wincmd k<CR>
@@ -75,3 +76,6 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
+" Home & End mapping
+nmap <c-a> <Home>
+nmap <c-e> <End>
