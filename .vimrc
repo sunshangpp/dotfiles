@@ -77,5 +77,5 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
 " Home & End mapping
-nmap <c-a> <Home>
-nmap <c-e> <End>
+nmap <c-a> ^
+nmap <c-e> $
