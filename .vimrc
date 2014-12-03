@@ -67,6 +67,7 @@ let g:airline_section_y = 'BN: %{bufnr("%")}'
 let g:airline_detect_whitespace=0
 let mapleader = ","
 
+" NerdTree mapping
 nmap <leader>ne :NERDTreeTabsToggle<CR>
 nmap <leader>nf :NERDTreeFind<CR>
 
@@ -79,3 +80,7 @@ nmap <silent> <c-l> :wincmd l<CR>
 " Home & End mapping
 nmap <c-a> ^
 nmap <c-e> $
+
+" Keep the current visual block selection active after changing indent
+vmap > >gv
+vmap < <gv
