@@ -58,7 +58,7 @@ endif
 set t_Co=256
 let g:solarized_termcolors=256
 "colorscheme hybrid
-colorscheme jellybeans
+colorscheme jelleybeans
 
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
