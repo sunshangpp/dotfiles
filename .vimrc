@@ -77,9 +77,11 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
-" Home & End mapping
+" Cursor movement mapping
 nmap <c-a> ^
 nmap <c-e> $
+nmap <c-d> 10j
+nmap <c-u> 10k
 
 " Keep the current visual block selection active after changing indent
 vmap > >gv
