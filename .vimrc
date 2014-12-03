@@ -80,8 +80,12 @@ nmap <silent> <c-l> :wincmd l<CR>
 " Cursor movement mapping
 nmap <c-a> ^
 nmap <c-e> $
-nmap <c-d> 10j
-nmap <c-u> 10k
+vmap <c-a> ^
+vmap <c-e> $
+nmap <c-d> 15j
+nmap <c-u> 15k
+vmap <c-d> 15j
+vmap <c-u> 15k
 
 " Keep the current visual block selection active after changing indent
 vmap > >gv
