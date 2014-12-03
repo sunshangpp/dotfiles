@@ -69,7 +69,7 @@ let mapleader = ","
 
 " NerdTree mapping
 nmap <leader>ne :NERDTreeTabsToggle<CR>
-nmap <leader>nf :NERDTreeFind<CR>
+nmap <leader>nf :NERDTreeFind <BAR> NERDTreeTabsOpen<CR>
 
 " Use ctrl-[hjkl] to select the active split!
 nmap <silent> <c-k> :wincmd k<CR>
