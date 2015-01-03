@@ -7,7 +7,6 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
@@ -23,6 +22,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'godlygeek/tabular'
 Plugin 'fatih/vim-go'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'rking/ag.vim'
 
 call vundle#end()
 
@@ -58,7 +58,9 @@ endif
 set t_Co=256
 let g:solarized_termcolors=256
 "colorscheme hybrid
-colorscheme jelleybeans
+"colorscheme jelleybeans
+"colorscheme solarized
+colorscheme sift
 
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -82,10 +84,12 @@ nmap <c-a> ^
 nmap <c-e> $
 vmap <c-a> ^
 vmap <c-e> $
-nmap <c-d> 15j
-nmap <c-u> 15k
-vmap <c-d> 15j
-vmap <c-u> 15k
+imap <c-a> <c-O>^
+imap <c-e> <c-O>$
+nmap <c-d> 10j
+nmap <c-u> 10k
+vmap <c-d> 10j
+vmap <c-u> 10k
 
 " Keep the current visual block selection active after changing indent
 vmap > >gv
