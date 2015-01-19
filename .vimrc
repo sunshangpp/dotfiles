@@ -60,7 +60,7 @@ let g:solarized_termcolors=256
 "colorscheme hybrid
 "colorscheme jelleybeans
 "colorscheme solarized
-colorscheme sift
+colorscheme peachpuff
 
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
