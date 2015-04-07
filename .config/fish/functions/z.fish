@@ -25,8 +25,8 @@ function z -d "Jump to a recent directory."
         # $HOME isn't worth matching
         [ "$argv" = "$HOME" ]; and return
 
-		set -l tempfile (mktemp $datafile.XXXXXX)
-		test -f $tempfile; or return
+    set -l tempfile (mktemp $datafile.XXXXXX)
+    test -f $tempfile; or return
 
         # maintain the file
         awk -v path="$argv" -v now=(date +%s) -F"|" '
@@ -111,8 +111,8 @@ function z -d "Jump to a recent directory."
             # no file yet
             [ -f "$datafile" ]; or return
 
-			set -l tempfile (mktemp $datafile.XXXXXX)
-			test -f $tempfile; or return
+      set -l tempfile (mktemp $datafile.XXXXXX)
+      test -f $tempfile; or return
             set -l target (awk -v t=(date +%s) -v list="$list" -v typ="$typ" -v q="$fnd" -v tmpfl="$tempfile" -F"|" '
                 function frecent(rank, time) {
                     dx = t-time
@@ -185,11 +185,11 @@ function z -d "Jump to a recent directory."
 end
 
 function __z_init -d 'Set up automatic population of the directory list for z'
-	functions fish_prompt | grep -q 'z --add'
-	if [ $status -gt 0 ]
-		functions fish_prompt | sed -e '$ i\\
-		z --add "$PWD"' | .
-	end
+  functions fish_prompt | grep -q 'z --add'
+  if [ $status -gt 0 ]
+    functions fish_prompt | sed -e '$ i\\
+    z --add "$PWD"' | .
+  end
 end
 
 __z_init

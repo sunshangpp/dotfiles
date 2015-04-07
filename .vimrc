@@ -23,6 +23,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'fatih/vim-go'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'rking/ag.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()
 
@@ -49,6 +50,7 @@ set sw=2
 set sts=2
 set splitright
 set splitbelow
+set tabstop=4
 
 if has("mouse")
     set mouse=a
@@ -57,10 +59,12 @@ endif
 " Color & Theme
 set t_Co=256
 let g:solarized_termcolors=256
-"colorscheme hybrid
+colorscheme hybrid
 "colorscheme jelleybeans
 "colorscheme solarized
-colorscheme peachpuff
+"colorscheme peachpuff
+"colorscheme Tomorrow-Night-Eighties
+"colorscheme icefall
 
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -74,10 +78,10 @@ nmap <leader>ne :NERDTreeTabsToggle<CR>
 nmap <leader>nf :NERDTreeFind <BAR> NERDTreeTabsOpen<CR>
 
 " Use ctrl-[hjkl] to select the active split!
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
+"nmap <silent> <c-k> :wincmd k<CR>
+"nmap <silent> <c-j> :wincmd j<CR>
+"nmap <silent> <c-h> :wincmd h<CR>
+"nmap <silent> <c-l> :wincmd l<CR>
 
 " Cursor movement mapping
 nmap <c-a> ^
