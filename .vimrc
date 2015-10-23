@@ -10,6 +10,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
 Plugin 'derekwyatt/vim-scala'
@@ -20,10 +21,11 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'godlygeek/tabular'
+Plugin 'rking/ag.vim'
 Plugin 'fatih/vim-go'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
-Plugin 'rking/ag.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
@@ -59,12 +61,13 @@ endif
 " Color & Theme
 set t_Co=256
 let g:solarized_termcolors=256
-colorscheme hybrid
+"colorscheme hybrid
 "colorscheme jelleybeans
 "colorscheme solarized
 "colorscheme peachpuff
 "colorscheme Tomorrow-Night-Eighties
 "colorscheme icefall
+colorscheme obsidian
 
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -73,9 +76,28 @@ let g:airline_section_y = 'BN: %{bufnr("%")}'
 let g:airline_detect_whitespace=0
 let mapleader = ","
 
+" OmniComplete
+set omnifunc=syntaxcomplete#Complete
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:SuperTabDefaultCompletionType = "context"
+" If you prefer the Omni-Completion tip window to close when a selection is
+" " made, these lines close it on movement in insert mode or when leaving
+" " insert mode
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 " NerdTree mapping
 nmap <leader>ne :NERDTreeTabsToggle<CR>
 nmap <leader>nf :NERDTreeFind <BAR> NERDTreeTabsOpen<CR>
+
+" syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Use ctrl-[hjkl] to select the active split!
 "nmap <silent> <c-k> :wincmd k<CR>
