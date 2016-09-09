@@ -1,0 +1,4 @@
+*.swp
+atom/compile-cache/*
+atom/blob-store/*
+

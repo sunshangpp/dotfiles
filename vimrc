@@ -69,6 +69,9 @@ let g:solarized_termcolors=256
 "colorscheme icefall
 colorscheme obsidian
 
+" Lint settings
+let g:syntastic_puppet_checkers=['']
+
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_seciont_b = '%{strftime("%c")}'
