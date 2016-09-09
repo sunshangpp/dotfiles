@@ -1,4 +1,4 @@
 *.swp
-atom/compile-cache/*
-atom/blob-store/*
+/atom/compile-cache/
+/atom/blob-store/
 

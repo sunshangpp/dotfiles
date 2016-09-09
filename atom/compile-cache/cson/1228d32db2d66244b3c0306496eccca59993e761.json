@@ -1,1 +1,0 @@
-{"context-menu":{".overlayer":{"Enable scala-worksheet":"scala-worksheet:run"}},"menu":[{"label":"Packages","submenu":[{"label":"scala-worksheet","submenu":[{"label":"Run","command":"scala-worksheet:run"}]}]}]}
