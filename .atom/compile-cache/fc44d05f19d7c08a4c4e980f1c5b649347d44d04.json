@@ -1,0 +1,1 @@
+{"context-menu":{"atom-text-editor":[{"label":"Rename Identifier","command":"go-rename:toggle"}]},"menu":[{"label":"Packages","submenu":[{"label":"go-rename","submenu":[{"label":"Rename Identifier","command":"go-rename:toggle"}]}]}]}

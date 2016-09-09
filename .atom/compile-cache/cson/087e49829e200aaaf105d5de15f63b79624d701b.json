@@ -1,0 +1,1 @@
+{"atom-text-editor.vim-mode:not(.insert-mode)":{"ctrl-a":"vim-mode:move-to-first-character-of-line","ctrl-e":"vim-mode:move-to-last-character-of-line"}}

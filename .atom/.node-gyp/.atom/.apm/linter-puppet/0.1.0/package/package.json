@@ -1,0 +1,24 @@
+{
+  "name": "linter-puppet",
+  "linter-package": true,
+  "activationEvents": [],
+  "main": "./lib/init",
+  "version": "0.1.0",
+  "description": "Lint puppet, using puppet parser",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcelocarlosbr/linter-puppet"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# linter-puppet",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/marcelocarlosbr/linter-puppet/issues"
+  },
+  "homepage": "https://github.com/marcelocarlosbr/linter-puppet",
+  "_id": "linter-puppet@0.1.0"
+}

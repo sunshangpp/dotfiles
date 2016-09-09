@@ -1,0 +1,16 @@
+/**
+ * For now we just have some string key -> value mappings in english. i18n
+ * support to come later.
+ */
+
+module.exports = {
+  // Strings
+  "git-blame-error": "Git Blame Error:",
+
+  // ERROR Messages
+  "error-no-custom-url-specified": "Woops! It looks like you didn't enter a Custom Commit Url Template String in the package settings. Please do so in order to open commit hashes for repos that are not hosted on Github or Bitbucket.",
+  "error-file-path-not-checked-in": "Looks like this file is not yet checked in, so we can't find any blame info to show you.",
+  "error-problem-parsing-data-from-remote": "Looks like we were unable to get the project and repo name from your remote url. It may have a format we haven't seen before. Please file an issue!",
+  "error-not-backed-by-git": "We've got nothing to show you. This project doesn't appear to be backed by git."
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zc3VuLy5hdG9tL3BhY2thZ2VzL2dpdC1ibGFtZS9saWIvbG9jYWxlcy9zdHJpbmdzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7O0FBS0MsTUFBTSxDQUFDLE9BQU8sR0FBRzs7QUFFZixtQkFBaUIsRUFBRSxrQkFBa0I7OztBQUdyQyxpQ0FBK0IsRUFBRSxzTUFBdU07QUFDeE8sa0NBQWdDLEVBQUUsMEZBQTJGO0FBQzdILDBDQUF3QyxFQUFFLHFKQUFzSjtBQUNoTSwyQkFBeUIsRUFBRSxpRkFBbUY7Q0FDL0csQ0FBQyIsImZpbGUiOiIvVXNlcnMvc3N1bi8uYXRvbS9wYWNrYWdlcy9naXQtYmxhbWUvbGliL2xvY2FsZXMvc3RyaW5ncy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogRm9yIG5vdyB3ZSBqdXN0IGhhdmUgc29tZSBzdHJpbmcga2V5IC0+IHZhbHVlIG1hcHBpbmdzIGluIGVuZ2xpc2guIGkxOG5cbiAqIHN1cHBvcnQgdG8gY29tZSBsYXRlci5cbiAqL1xuXG4gbW9kdWxlLmV4cG9ydHMgPSB7XG4gICAvLyBTdHJpbmdzXG4gICAnZ2l0LWJsYW1lLWVycm9yJzogJ0dpdCBCbGFtZSBFcnJvcjonLFxuXG4gICAvLyBFUlJPUiBNZXNzYWdlc1xuICAgJ2Vycm9yLW5vLWN1c3RvbS11cmwtc3BlY2lmaWVkJzogJ1dvb3BzISBJdCBsb29rcyBsaWtlIHlvdSBkaWRuXFwndCBlbnRlciBhIEN1c3RvbSBDb21taXQgVXJsIFRlbXBsYXRlIFN0cmluZyBpbiB0aGUgcGFja2FnZSBzZXR0aW5ncy4gUGxlYXNlIGRvIHNvIGluIG9yZGVyIHRvIG9wZW4gY29tbWl0IGhhc2hlcyBmb3IgcmVwb3MgdGhhdCBhcmUgbm90IGhvc3RlZCBvbiBHaXRodWIgb3IgQml0YnVja2V0LicsXG4gICAnZXJyb3ItZmlsZS1wYXRoLW5vdC1jaGVja2VkLWluJzogJ0xvb2tzIGxpa2UgdGhpcyBmaWxlIGlzIG5vdCB5ZXQgY2hlY2tlZCBpbiwgc28gd2UgY2FuXFwndCBmaW5kIGFueSBibGFtZSBpbmZvIHRvIHNob3cgeW91LicsXG4gICAnZXJyb3ItcHJvYmxlbS1wYXJzaW5nLWRhdGEtZnJvbS1yZW1vdGUnOiAnTG9va3MgbGlrZSB3ZSB3ZXJlIHVuYWJsZSB0byBnZXQgdGhlIHByb2plY3QgYW5kIHJlcG8gbmFtZSBmcm9tIHlvdXIgcmVtb3RlIHVybC4gSXQgbWF5IGhhdmUgYSBmb3JtYXQgd2UgaGF2ZW5cXCd0IHNlZW4gYmVmb3JlLiBQbGVhc2UgZmlsZSBhbiBpc3N1ZSEnLFxuICAgJ2Vycm9yLW5vdC1iYWNrZWQtYnktZ2l0JzogJ1dlXFwndmUgZ290IG5vdGhpbmcgdG8gc2hvdyB5b3UuIFRoaXMgcHJvamVjdCBkb2VzblxcJ3QgYXBwZWFyIHRvIGJlIGJhY2tlZCBieSBnaXQuJ1xuIH07XG4iXX0=
