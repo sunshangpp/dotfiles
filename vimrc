@@ -71,6 +71,7 @@ colorscheme obsidian
 
 " Lint settings
 let g:syntastic_puppet_checkers=['']
+let g:syntastic_scala_checkers=['']
 
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
