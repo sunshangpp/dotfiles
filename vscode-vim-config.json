@@ -1,0 +1,119 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // vim
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["<C-a>"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "cursorHome"
+                }
+            ]
+        },
+        {
+            "before": ["<C-e>"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "cursorEnd"
+                }
+            ]
+        }
+    ],
+
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<C-a>"],
+            "after": ["^"]
+        },
+        {
+            "before": ["<C-e>"],
+            "after": ["g", "_"]
+        },
+        {
+            "before": ["<C-u>"],
+            "after": ["1", "0", "k"]
+        },
+        {
+            "before": ["<C-d>"],
+            "after": ["1", "0", "j"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["Z", "Z"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                },
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        }
+    ],
+
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<C-a>"],
+            "after": ["^"]
+        },
+        {
+            "before": ["<C-e>"],
+            "after": ["g", "_"]
+        },
+        {
+            "before": ["<C-u>"],
+            "after": ["1", "0", "k"]
+        },
+        {
+            "before": ["<C-d>"],
+            "after": ["1", "0", "j"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["Z", "Z"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                },
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        }
+    ],
+
+    // go
+    // "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+
+    // python
+    "python.pythonPath": "/Users/ssun/test/bin/python",
+
+    // misc
+    "workbench.iconTheme": "vscode-icons",
+    "window.zoomLevel": 0,
+    "vsicons.dontShowNewVersionMessage": true,
+    "files.trimTrailingWhitespace": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "workbench.colorTheme": "Material Theme",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": true
+    },
+    "[sql]": {},
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.keymap": "chorded"
+}
