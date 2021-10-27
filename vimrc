@@ -1,38 +1,31 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" Vundle Plugins
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-surround'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'rodjek/vim-puppet'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'ervandew/supertab'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'godlygeek/tabular'
-Plugin 'rking/ag.vim'
-Plugin 'fatih/vim-go'
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'Valloric/YouCompleteMe'
-
-call vundle#end()
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/syntastic'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-surround'
+Plug 'flazz/vim-colorschemes'
+Plug 'ervandew/supertab'
+Plug 'scrooloose/nerdcommenter'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'godlygeek/tabular'
+Plug 'rking/ag.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'Valloric/YouCompleteMe'
+"Plug 'derekwyatt/vim-scala'
+"Plug 'vim-ruby/vim-ruby'
+"Plug 'rodjek/vim-puppet'
+"Plug 'fatih/vim-go'
+"Plug 'nsf/gocode', {'rtp': 'vim/'}
+call plug#end()
 
 filetype on
 syntax on
-filetype plugin on
-filetype indent on
 
 " Settings
 set shell=/bin/bash
@@ -67,7 +60,7 @@ let g:solarized_termcolors=256
 "colorscheme peachpuff
 "colorscheme Tomorrow-Night-Eighties
 "colorscheme icefall
-colorscheme obsidian
+"colorscheme obsidian
 
 " Lint settings
 let g:syntastic_puppet_checkers=['']
@@ -80,15 +73,8 @@ let g:airline_section_y = 'BN: %{bufnr("%")}'
 let g:airline_detect_whitespace=0
 let mapleader = ","
 
-" OmniComplete
-set omnifunc=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 let g:SuperTabDefaultCompletionType = "context"
-" If you prefer the Omni-Completion tip window to close when a selection is
-" " made, these lines close it on movement in insert mode or when leaving
-" " insert mode
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 " NerdTree mapping
 nmap <leader>ne :NERDTreeTabsToggle<CR>
@@ -108,6 +94,11 @@ let g:syntastic_check_on_wq = 0
 "nmap <silent> <c-j> :wincmd j<CR>
 "nmap <silent> <c-h> :wincmd h<CR>
 "nmap <silent> <c-l> :wincmd l<CR>
+
+" Quick save
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>
 
 " Cursor movement mapping
 nmap <c-a> ^
